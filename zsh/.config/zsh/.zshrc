@@ -1,20 +1,24 @@
 autoload -Uz colors && colors
 
 
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-bindkey "^p" up-line-or-beginning-search             # Up
-bindkey "^n" down-line-or-beginning-search           # Down
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
+zmodload -i zsh/complist
 
+# Use hjlk in menu selection (during completion)
+# Doesn't work well with interactive mode
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
 
 autoload -Uz compinit
-zstyle ':completion:*' menu select #completer _complete _ignored
+zstyle ':completion:*' completer _extensions _complete _approximate
+zstyle ':completion:*' menu select
+zstyle ':completion:*' complete-options true
+zstyle ':completion:*' file-sort modification
+
 zstyle :compinstall filename '/home/alqaholic/.zshrc'
 compinit -d $XDG_DATA_HOME/.zccompdump
-
-zmodload -i zsh/complist
+_comp_options+=(globdots)
 
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -32,7 +36,6 @@ zle_highlight=('paste:none')
 
 zsh_add_file "exports.zsh"
 zsh_add_file "aliases.zsh"
-zsh_add_file "vim-mode.zsh"
 
 
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
