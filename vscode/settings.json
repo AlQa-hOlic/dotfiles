@@ -1,0 +1,25 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "gruvboxMaterial.darkContrast": "hard",
+  "workbench.activityBar.visible": false,
+  "editor.fontFamily": "'Iosevka Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontSize": 18,
+  "window.menuBarVisibility": "toggle",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "window.titleBarStyle": "custom",
+  "workbench.sideBar.location": "right",
+  "vim.useCtrlKeys": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.rulers": [120],
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  }
+}
