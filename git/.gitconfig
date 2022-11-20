@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	email = rohit.k.kesavan@gmail.com
+	name = Rohit Krishnan
+[color]
+    ui = auto
+[core]
+	editor = nvim
