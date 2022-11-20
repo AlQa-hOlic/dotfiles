@@ -1,0 +1,56 @@
+auto_reload_config: true
+
+window:
+  opacity: 0.9
+  padding:
+    x: 10
+    y: 10
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Block
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+font:
+  normal:
+    family: Iosevka Nerd Font
+    style: Regular
+  italic:
+    family: Iosevka Nerd Font
+    style: Italic
+  bold:
+    family: Iosevka Nerd Font
+    style: Bold
+  bold_italic:
+    family: Iosevka Nerd Font
+    style: Bold Italic
+  size: 14
+
+GruvboxDark: &GruvboxDark
+  # Default colors
+  primary:
+    # hard contrast: background = '0x1d2021'
+    background: '#282828'
+    # soft contrast: background = '0x32302f'
+    foreground: '#ebdbb2'
+
+  # Normal colors
+  normal:
+    black:   '#282828'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
+
+colors: *GruvboxDark
