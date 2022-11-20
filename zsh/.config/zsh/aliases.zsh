@@ -13,6 +13,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias ls='exa --color=auto --group-directories-first'
 alias ll='exa --color=auto --group-directories-first --all --long'
+alias vim='nvim'
+alias cat="bat --color=always --decorations never"
 
 
 # confirm before overwriting something
@@ -25,6 +27,8 @@ alias rm='rm -i'
 alias df='df -h'     # human-readable sizes
 alias free='free -m' # show sizes in MB
 
+# Git aliases
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit"
+alias git_undo_last_commit="git reset --soft HEAD~1"
