@@ -34,9 +34,7 @@ zle_highlight=('paste:none')
 
 [ -f "$ZDOTDIR/functions.zsh" ] && source "$ZDOTDIR/functions.zsh"
 
-zsh_add_file "exports.zsh"
 zsh_add_file "aliases.zsh"
-
 
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
