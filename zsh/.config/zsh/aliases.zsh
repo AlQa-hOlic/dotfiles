@@ -27,4 +27,4 @@ alias free='free -m' # show sizes in MB
 
 alias gs="git status"
 alias ga="git add ."
-alias gc="git commit -m"
+alias gc="git commit"
