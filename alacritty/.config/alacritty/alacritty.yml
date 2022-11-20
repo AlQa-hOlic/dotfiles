@@ -1,5 +1,7 @@
 auto_reload_config: true
-
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
 window:
   opacity: 0.9
   padding:
@@ -54,3 +56,11 @@ GruvboxDark: &GruvboxDark
     white:   '#a89984'
 
 colors: *GruvboxDark
+
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  # - { key: N, mods: Control, action: SpawnNewInstance }
