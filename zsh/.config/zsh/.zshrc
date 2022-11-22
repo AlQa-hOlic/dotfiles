@@ -1,6 +1,5 @@
 autoload -Uz colors && colors
 
-
 zmodload -i zsh/complist
 
 # Use hjlk in menu selection (during completion)
@@ -33,6 +32,7 @@ zle_highlight=('paste:none')
 
 
 [ -f "$ZDOTDIR/functions.zsh" ] && source "$ZDOTDIR/functions.zsh"
+[ -f "$HOME/.zprofile" ] && source "$HOME/.zprofile"
 
 zsh_add_file "aliases.zsh"
 
@@ -42,4 +42,5 @@ zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 if type "krabby" &> /dev/null; then
   krabby random
 fi
+
 eval "$(starship init zsh)"

@@ -29,6 +29,6 @@ alias free='free -m' # show sizes in MB
 
 # Git aliases
 alias gs="git status"
-alias ga="git add ."
 alias gc="git commit"
+alias batdiff="git diff --name-only --relative --diff-filter=d | xargs bat --diff"
 alias git_undo_last_commit="git reset --soft HEAD~1"

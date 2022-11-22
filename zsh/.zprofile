@@ -11,5 +11,6 @@ export XDG_CURRENT_DESKTOP="Wayland"
 
 export ZDOTDIR=$HOME/.config/zsh
 
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$(yarn global bin)"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
